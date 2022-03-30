@@ -1,0 +1,28 @@
+INITIALIZE name
+OUTPUT "Vad heter du? "
+INPUT name
+
+INITIALIZE age
+OUTPUT "Hur gammal är du? "
+INPUT age
+
+INITIALIZE current_year 
+SET current_year
+
+INITIALIZE birth_year
+SET birth_year = current_year - age
+OUTPUT "Okej name. Du föddes alltså år birth_year"
+
+INITIALIZE has_children
+OUTPUT "Har du några barn? "
+INPUT has_children
+
+IF has_children EQUAL "ja"
+    INITIALIZE children_amount
+    OUTPUT "Hur många barn har du? "
+    INPUT children_amount
+    OUTPUT "Trevligt med children_amount barn. Själv har jag inga barn då jag är ett program."
+ELSE
+    OUTPUT "Inte jag heller, för att jag är ett program."
+
+
